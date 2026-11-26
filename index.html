@@ -3,37 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello!</title>
-  <style>
-    body {
-      display: grid;
-      min-height: 100vh;
-      margin: 0;
-      place-items: center;
-      background: #edf3ff;
-      color: #152448;
-      font: 1.125rem / 1.5 system-ui, sans-serif;
-    }
-
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font: 400 clamp(3rem, 12vw, 7rem) / 1 Georgia, serif;
-    }
-
-    p {
-      margin: 1rem 0 0;
-    }
-  </style>
+  <meta name="description" content="Sura Al-Qudah’s academic website. Explore her work in engineering education, applied ergonomics, and continuous improvement.">
+  <title>Sura Al-Qudah | Engineering &amp; Design</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Hello!</h1>
-    <p>Welcome to my corner of the web.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#main">Sura Al-Qudah</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="name">
+      <div class="wrap hero-inner">
+        <div>
+          <p class="label">Western Washington University</p>
+          <h1 id="name">Sura Al-Qudah</h1>
+          <p class="role">Associate Professor of Engineering &amp; Design</p>
+          <p class="intro">I study how engineering students develop a sense of belonging, how design can improve the work people do, and how manufacturing and healthcare processes can work better.</p>
+          <a class="button" href="#research">Explore my research</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="research" aria-labelledby="research-title">
+      <p class="label">Scholarship</p>
+      <h2 id="research-title">Research</h2>
+      <div class="research-grid">
+        <article>
+          <h3>Engineering education</h3>
+          <p>I study belonging and persistence among engineering undergraduates and pathways for engineers to teach in K–12 schools.</p>
+        </article>
+        <article>
+          <h3>Applied ergonomics &amp; human factors</h3>
+          <p>My projects include a surgical body support system and a patented guide for placing distal screws in orthopedic implants.</p>
+        </article>
+        <article>
+          <h3>Continuous improvement</h3>
+          <p>I apply lean methods to manufacturing education and healthcare workflows, including visual management in outpatient clinics.</p>
+        </article>
+      </div>
+
+      <h3 class="subheading">Selected work</h3>
+      <ul class="work-list">
+        <li><span class="year">2025</span><div><h4><a href="https://patents.google.com/patent/US12349947B2/en">Distal-screw guiding system for interlocking intramedullary nail implants</a></h4><p>S. Alqudah, L. Smith, and A. Al-Qudah · U.S. Patent 12,349,947 B2</p></div></li>
+        <li><span class="year">2025</span><div><h4>Navigating the Path to Persistence and Belonging: The Role of Multifaceted Support in the First Two Years of Undergraduate Engineering Education</h4><p>J. Brobst, E. Litzler, S. Alqudah, J. Davishahl, and A. Klein · <cite>Journal of STEM Education: Innovations and Research</cite>, 26(1), 6–15</p></div></li>
+        <li><span class="year">2024–26</span><div><h4>Let Engineers Teach Engineering in K–12</h4><p>Principal investigator · National Science Foundation Robert Noyce Teacher Scholarship Program · Award 2345196</p></div></li>
+        <li><span class="year">2023</span><div><h4>Math to Makerspace: Evolution of a Bridge Program to Support Cohort Development</h4><p>J. Davishahl, S. Alqudah, J. Brobst, E. Litzler, and A. Klein · ASEE Annual Conference &amp; Exposition</p></div></li>
+      </ul>
+    </section>
+
+    <section class="band" id="teaching" aria-labelledby="teaching-title">
+      <div class="wrap section split">
+        <div>
+          <h2 id="teaching-title">Teaching</h2>
+          <p>I teach manufacturing engineering at Western. In Manufacturing Process Planning, students work with industry partners on ergonomics and lean manufacturing projects. I also mentor undergraduate researchers working on orthopedic device design and hands-on lean manufacturing labs.</p>
+        </div>
+        <div>
+          <h3>Selected courses</h3>
+          <ul class="courses">
+            <li><span>MFGE 333</span> Design for Manufacture</li>
+            <li><span>MFGE 341</span> Quality &amp; Continuous Improvement</li>
+            <li><span>MFGE 342</span> Data Analysis &amp; Design of Experiments</li>
+            <li><span>MFGE 381</span> Manufacturing Process Planning</li>
+            <li><span>MFGE 495</span> Directed Research in Manufacturing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section split" id="leadership" aria-labelledby="leadership-title">
+      <div>
+        <h2 id="leadership-title">Leadership &amp; service</h2>
+        <ul class="roles">
+          <li><strong>Department Chair, Engineering &amp; Design</strong><span>Appointed July 2024 · Western Washington University</span></li>
+          <li><strong>Program Director, Manufacturing Engineering</strong><span>2021–2024 · Western Washington University</span></li>
+        </ul>
+        <p>I led curriculum development for Western’s Industrial &amp; Systems Engineering program on the Peninsulas, coordinated the Manufacturing Engineering ABET self-study and 2022 site visit, and advised the Society of Women Engineers chapter from 2015 to 2024.</p>
+      </div>
+      <div class="education">
+        <h3>Education</h3>
+        <ul class="roles">
+          <li><strong>Ph.D., Industrial and Systems Engineering</strong><span>Binghamton University · 2014</span></li>
+          <li><strong>M.S., Industrial and Systems Engineering</strong><span>Binghamton University · 2010</span></li>
+          <li><strong>B.S., Electronics Engineering</strong><span>Yarmouk University, Jordan · 2004</span></li>
+        </ul>
+      </div>
+    </section>
   </main>
+
+  <footer id="contact">
+    <div class="wrap footer-inner">
+      <div>
+        <h2>Contact</h2>
+        <p>Department of Engineering &amp; Design<br>Western Washington University · Bellingham, WA</p>
+      </div>
+      <a href="mailto:sura.alqudah@wwu.edu">sura.alqudah@wwu.edu</a>
+    </div>
+  </footer>
 </body>
 </html>
