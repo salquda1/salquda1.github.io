@@ -44,11 +44,17 @@ h1 { font-size: clamp(3.3rem, 8vw, 7.25rem); line-height: .99; }
 .intro { color: #d0e1de; max-width: 36rem; font-size: 1.1rem; }
 .button { display: inline-block; margin-top: .55rem; padding: .7rem 1.15rem; background: #b4e5cd; color: #142e31; border-radius: .2rem; text-decoration: none; font-weight: 650; }
 .button:hover { background: #d7f3e5; }
-.hero-art { position: relative; aspect-ratio: 1; width: 100%; max-width: 24rem; justify-self: end; border: 1px solid #59857c; background-image: linear-gradient(#59857c40 1px, transparent 1px), linear-gradient(90deg, #59857c40 1px, transparent 1px); background-size: 12.5% 12.5%; }
-.orbit { position: absolute; inset: 14%; border-radius: 50%; border: 1px solid #a6dfc5; }
-.orbit-two { inset: 14% 34%; transform: rotate(45deg); }
-.orbit-three { inset: 14% 34%; transform: rotate(-45deg); }
-.orbit-one::after { content: ""; position: absolute; top: 14%; left: 14%; width: .65rem; height: .65rem; border-radius: 50%; background: #f1c386; transform: translate(-50%, -50%); }
+.hero-portrait {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+  justify-self: end;
+  border: 1px solid #59857c;
+}
 
 .section { padding-block: clamp(3.2rem, 7vw, 6rem); }
 .research-grid, .split { display: grid; gap: 1.5rem; }
@@ -78,7 +84,7 @@ footer a { color: #b4e5cd; overflow-wrap: anywhere; }
 @media (max-width: 48rem) {
   .hero-inner, .split { grid-template-columns: 1fr; }
   .hero-inner { min-height: auto; }
-  .hero-art { display: none; }
+  .hero-portrait { justify-self: start; max-width: 16rem; }
   .research-grid { grid-template-columns: 1fr; }
   .education { border-left: 0; border-top: 1px solid var(--line); padding: 1.4rem 0 0; }
 }
