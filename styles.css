@@ -47,7 +47,7 @@ h1 { font-size: clamp(3.3rem, 8vw, 7.25rem); line-height: .99; }
 .hero-portrait {
   display: block;
   width: 100%;
-  max-width: 22rem;
+  max-width: 18rem;
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -84,7 +84,7 @@ footer a { color: #b4e5cd; overflow-wrap: anywhere; }
 @media (max-width: 48rem) {
   .hero-inner, .split { grid-template-columns: 1fr; }
   .hero-inner { min-height: auto; }
-  .hero-portrait { justify-self: start; max-width: 16rem; }
+  .hero-portrait { justify-self: start; max-width: 12rem; }
   .research-grid { grid-template-columns: 1fr; }
   .education { border-left: 0; border-top: 1px solid var(--line); padding: 1.4rem 0 0; }
 }
